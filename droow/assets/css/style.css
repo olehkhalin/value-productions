@@ -12570,5 +12570,19 @@ footer .copyright-social ul li:last-child {
 .v-light .caption {
   color: #000;
 }
-
+.gorizontal-image{
+  width: 100%;
+  display: flex;
+  align-items: center;
+}
+.fa-dollar-sign{
+  color: #ffffff;
+  font-size: 64px;
+  margin-right: 50px;
+}
+.fa-clock{
+  color: #ffffff;
+  font-size: 64px;
+  margin-right: 25px;
+}
 /*# sourceMappingURL=style.css.map */
