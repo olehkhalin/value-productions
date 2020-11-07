@@ -369,6 +369,16 @@
   transform: translate(-50%, -50%);
 }
 
+.v-middle-custom {
+  margin-top: 50px;
+}
+
+#v-middle-custom-span {
+  font-size: 14px;
+  display: inline;
+  margin-left: 20px;
+}
+
 /*! normalize.css v8.0.0 | MIT License | github.com/necolas/normalize.css */
 /* Document
 	 ========================================================================== */
@@ -5739,6 +5749,11 @@ body.nav-active .dsn-nav-bar .icon-m .menu-icon__line {
   position: relative;
 }
 
+.img-before {
+  width: 60px;
+  margin-right: 20px;
+}
+
 .our-services .services-item .line-before {
   width: 40px;
   height: 2px;
@@ -5887,6 +5902,9 @@ body.nav-active .dsn-nav-bar .icon-m .menu-icon__line {
   -ms-flex-wrap: wrap;
   flex-wrap: wrap;
 }
+#logo-box-main {
+  width: calc(33.33333% - 2px);
+}
 
 .brand-client .wapper-client .logo-box {
   position: relative;
@@ -5898,7 +5916,7 @@ body.nav-active .dsn-nav-bar .icon-m .menu-icon__line {
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
-  width: calc(33.33333% - 2px);
+  width: calc(20% - 2px);
   padding: 15px;
   min-height: 240px;
   margin-right: 2px;
@@ -5922,7 +5940,8 @@ body.nav-active .dsn-nav-bar .icon-m .menu-icon__line {
   }
 }
 
-.brand-client .wapper-client .logo-box img {
+.brand-client .wapper-client .
+ img {
   max-width: 180px;
   margin: auto;
 }
@@ -6122,13 +6141,78 @@ body.nav-active .dsn-nav-bar .icon-m .menu-icon__line {
   justify-content: center;
   -ms-flex-line-pack: center;
   align-content: center;
-  background-color: rgba(13, 13, 13, 0.7);
+  background-color: rgba(13, 13, 13, 0.906);
   height: 100%;
   top: 0;
 }
 
 .v-light .box-seat.box-seat-full .pro-text {
   background-color: rgba(0, 0, 0, 0.42);
+}
+/* .cookie-wrapper .cookie{ 
+  display: none;
+} */
+
+@media (min-width: 2501px) {
+  .cookie-wrapper .cookie{ 
+    display: none;
+  }
+}
+
+@media (max-width: 2500px) {
+  .cookie-wrapper {
+    background: linear-gradient(326.8deg,#2c333a -71.57%,#121416 59.28%);
+    box-shadow: 4px 4px 18px rgba(0,0,0,.5), -4px -2px 16px rgba(195,200,205,.08);
+    color: #d6e1ef;
+    position: fixed;
+    bottom: 0px;
+    align-items: baseline;
+    width: 100%;
+    z-index: 999;
+  }
+  .cookie {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    left: 0;
+    margin: 0 auto;
+    height: 100%;
+    position: relative;
+    padding: 20px 32px;
+  }
+  #btn-cookie {
+    background-color: white; 
+    color: black; 
+    left: 1200px;
+  }
+}
+
+@media (max-width: 1370px){
+  .cookie-wrapper {
+    background: linear-gradient(326.8deg,#2c333a -71.57%,#121416 59.28%);
+    box-shadow: 4px 4px 18px rgba(0,0,0,.5), -4px -2px 16px rgba(195,200,205,.08);
+    color: #d6e1ef;
+    position: fixed;
+    bottom: 0px;
+    align-items: baseline;
+    width: 100%;
+    z-index: 999;
+  }
+  .cookie {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    left: 0;
+    margin: 0 auto;
+    height: 100%;
+    position: relative;
+    padding: 20px 32px;
+  }
+  #btn-cookie {
+    background-color: white; 
+    color: black; 
+    left: 0px;
+  }
 }
 
 @media only screen and (max-width: 991px) {
@@ -7032,7 +7116,12 @@ body.nav-active .dsn-nav-bar .icon-m .menu-icon__line {
 
 .client-see .inner .left {
   width: 40%;
+  height: 100px;
 }
+
+/* .img-icon-custom {
+  background-color: ivory;
+} */
 
 @media only screen and (max-width: 767px) {
   .client-see .inner .left {
@@ -9160,7 +9249,8 @@ body.nav-active .dsn-nav-bar .icon-m .menu-icon__line {
 
 .header-hero .contenet-hero {
   position: relative;
-  width: 100%;
+  display: inline-block;
+  width: 50%;
   padding: 150px 0 120px 0;
 }
 
@@ -10169,10 +10259,18 @@ body.nav-active .dsn-nav-bar .icon-m .menu-icon__line {
   transform: translateY(0);
 }
 
+/* .view-all-custom {
+  position: fixed;
+  bottom: -130px;
+  right: 175px;
+  z-index: 121;
+  cursor: pointer;
+  height: 40px;
+  line-height: 30px;
+} */
 .view-all {
   position: fixed;
   bottom: 30px;
-  right: 175px;
   z-index: 121;
   cursor: pointer;
   height: 40px;
@@ -10192,7 +10290,8 @@ body.nav-active .dsn-nav-bar .icon-m .menu-icon__line {
 .view-all .icon-circle {
   position: absolute;
   top: -8px;
-  left: 22px;
+  /* left: 22px; */
+  right: 10px;
   width: 150px;
   height: 40px;
   border: 1px solid white;
@@ -12575,14 +12674,8 @@ footer .copyright-social ul li:last-child {
   display: flex;
   align-items: center;
 }
-.fa-dollar-sign{
-  color: #ffffff;
-  font-size: 64px;
-  margin-right: 50px;
-}
-.fa-clock{
-  color: #ffffff;
-  font-size: 64px;
-  margin-right: 25px;
+.gorizontal-image-img {
+  width: 80px;
+  margin-right: 20px;
 }
 /*# sourceMappingURL=style.css.map */

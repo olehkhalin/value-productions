@@ -10180,19 +10180,25 @@ body.nav-active .dsn-nav-bar .icon-m .menu-icon__line {
 }
 
 @media only screen and (max-width: 767px) {
-  .view-all {
+  /* .view-all {
     bottom: 20px;
     right: 130px;
-  }
+  } */
   .dsn-show-work .view-all {
     right: 20px;
   }
 }
+/* .icon-circle {
+  transform-origin: 0px 0px 0px; 
+  transform: matrix(1, 0, 0, 1, 0, 0); 
+  right: 0px; 
+  left: auto;
+} */
 
 .view-all .icon-circle {
   position: absolute;
   top: -8px;
-  left: 22px;
+  /* left: 22px; */
   width: 150px;
   height: 40px;
   border: 1px solid white;
